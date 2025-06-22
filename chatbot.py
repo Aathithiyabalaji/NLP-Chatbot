@@ -7,6 +7,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 from nltk.stem.porter import PorterStemmer
 
+nltk.data.path.append("./nltk_data")
+
 stemmer = PorterStemmer()
 
 # Load intents
