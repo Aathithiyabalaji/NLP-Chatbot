@@ -1,0 +1,158 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hello", "Hi", "Hey", "Good morning", "Good evening"],
+      "responses": [
+        "Hey there! 👋",
+        "Hello! How can I help you today?",
+        "Hi! What’s on your mind?",
+        "Hey! I’m here to chat."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you", "Catch you later"],
+      "responses": [
+        "Goodbye! Take care 😊",
+        "See you later!",
+        "Catch you soon!",
+        "Bye! Come back anytime to chat."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": ["How are you?", "What's up?", "How's it going?", "Are you okay?"],
+      "responses": [
+        "I'm just a bunch of code, but feeling smart today! 🤖",
+        "Doing great, thanks for asking! What about you?",
+        "I'm always online and always ready.",
+        "All systems go 🚀"
+      ]
+    },
+    {
+      "tag": "name_query",
+      "patterns": ["What is your name?", "Who are you?", "Tell me your name"],
+      "responses": [
+        "I’m your friendly chatbot assistant! 😎",
+        "You can call me ChatGenie 🧞",
+        "I’m an AI here to make your day easier.",
+        "I go by many names... but you can call me Bot 😂"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Make me laugh", "Got any jokes?", "Fun stuff"],
+      "responses": [
+        "Why don’t scientists trust atoms? Because they make up everything! 😂",
+        "Parallel lines have so much in common… it’s a shame they’ll never meet.",
+        "I told my computer I needed a break, and it said 'No problem, I’ll go to sleep.'",
+        "I would tell you a construction joke, but I’m still working on it 🛠️"
+      ]
+    },
+    {
+      "tag": "weather_joke",
+      "patterns": ["How’s the weather?", "Is it raining?", "Sunny outside?"],
+      "responses": [
+        "I’d check for you, but I live in the cloud ☁️",
+        "Probably 99% chance of digital sunshine 🌞",
+        "I don’t do weather… but I can brighten your mood! 😁"
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["Motivate me", "I need motivation", "Inspire me", "Feeling low"],
+      "responses": [
+        "You’ve got this! Believe in yourself 💪",
+        "Every day is a new chance to grow 🌱",
+        "Success starts with self-belief. Go shine! ✨",
+        "Great things never come from comfort zones 🚀"
+      ]
+    },
+    {
+      "tag": "coding_tip",
+      "patterns": ["Give me a coding tip", "Programming advice", "How to code better?"],
+      "responses": [
+        "Break problems into smaller chunks — divide and conquer! 👨‍💻",
+        "Write clean code like you're writing for your future self.",
+        "Comment your code. Future you will thank you!",
+        "Debugging is like being the detective of your own mistakes 🔍"
+      ]
+    },
+    {
+      "tag": "relationship_joke",
+      "patterns": ["Tell me a relationship joke", "Love joke", "Funny love quote"],
+      "responses": [
+        "My love life is like a software update… always reminding me it's available, never installing.",
+        "Love is like Wi-Fi — sometimes it's there, sometimes it's not.",
+        "He said he needed space… so I gave him 512GB 💾"
+      ]
+    },
+    {
+      "tag": "travel_tip",
+      "patterns": ["Give me a travel tip", "Travel advice", "Going on a trip"],
+      "responses": [
+        "Always pack a power bank. Dead phones kill adventures 🔋",
+        "Roll, don’t fold your clothes — save space 🧳",
+        "Always carry a digital and physical copy of your important docs!",
+        "Travel light. Memories are your best baggage."
+      ]
+    },
+    {
+      "tag": "default",
+      "patterns": [],
+      "responses": [
+        "Sorry, I didn’t get that. Can you rephrase?",
+        "Hmm, not sure what you mean. Try asking something else!",
+        "I’m still learning. Mind trying again?",
+        "Oops, didn’t catch that. Ask me anything!"
+      ]
+    },
+       {
+  "tag": "productivity_tip",
+  "patterns": ["How to be productive?", "Give me a productivity tip", "How can I focus better?"],
+  "responses": [
+    "Use the Pomodoro technique: 25 mins of work, 5 mins of break. Works wonders! 🍅",
+    "Start with the hardest task first — beat procrastination early 💪",
+    "Cut distractions. Airplane mode is your friend. ✈️"
+  ]
+},
+{
+  "tag": "daily_quote",
+  "patterns": ["Give me a quote", "Motivational quote", "Quote of the day"],
+  "responses": [
+    "“The secret of getting ahead is getting started.” — Mark Twain",
+    "“Push yourself, because no one else is going to do it for you.”",
+    "“Dream big. Start small. Act now.”"
+  ]
+},
+{
+  "tag": "study_tip",
+  "patterns": ["How to study better?", "Study tips", "Help me study"],
+  "responses": [
+    "Teach what you learn — it improves memory by 90%! 📚",
+    "Use spaced repetition. It’s gold for long-term memory retention 🔁",
+    "Turn off notifications, set a timer, and get into deep work mode."
+  ]
+},
+{
+  "tag": "coding_tip",
+  "patterns": ["Help with coding", "Programming advice", "How to learn programming?"],
+  "responses": [
+    "Break problems into smaller steps and solve one at a time 🔧",
+    "Google is your best friend. Don’t be afraid to search! 🔍",
+    "Practice consistently — 30 mins daily beats 4 hours once a week 💡"
+  ]
+},
+{
+  "tag": "fun_fact",
+  "patterns": ["Tell me a fun fact", "Do you know something cool?", "Fun fact"],
+  "responses": [
+    "Bananas are berries, but strawberries aren’t! 🍌🍓",
+    "Octopuses have 3 hearts. ❤️❤️❤️",
+    "Honey never spoils — archaeologists found 3000-year-old edible honey!"
+  ]
+}
+
+  ]
+}
