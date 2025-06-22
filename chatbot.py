@@ -5,9 +5,9 @@ import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from nltk.stem.porter import PorterStemmer
-
 nltk.data.path.append("./nltk_data")
+
+from nltk.stem.porter import PorterStemmer
 
 stemmer = PorterStemmer()
 
@@ -15,8 +15,11 @@ stemmer = PorterStemmer()
 with open("intents.json", encoding='utf-8') as file:
     data = json.load(file)
 
+from nltk.tokenize import word_tokenize
+
 def tokenize(sentence):
-    return nltk.word_tokenize(sentence)
+    return word_tokenize(sentence)
+
 
 def stem(word):
     return stemmer.stem(word.lower())
