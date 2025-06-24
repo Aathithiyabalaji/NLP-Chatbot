@@ -1,13 +1,16 @@
 import json
 import random
 import nltk
+import os
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from nltk.stem.porter import PorterStemmer
 
+# Manually specify NLTK data path if needed
 nltk.data.path.append("./nltk_data")
 
-from nltk.stem.porter import PorterStemmer
+
 
 stemmer = PorterStemmer()
 
@@ -15,10 +18,9 @@ stemmer = PorterStemmer()
 with open("intents.json", encoding='utf-8') as file:
     data = json.load(file)
 
-from nltk.tokenize import word_tokenize
-
+import re
 def tokenize(sentence):
-    return word_tokenize(sentence)
+    return re.findall(r'\b\w+\b', sentence.lower())
 
 
 def stem(word):
@@ -67,12 +69,7 @@ def get_intent(user_input):
     confidence = cos_sim[0][index]
     print(f"Matched intent: {tags_list[index]} with confidence: {confidence:.2f}")
 
-    
-    if confidence > 0.3:  # You can adjust threshold here
-        return tags_list[index]
-    else:
-        return "default"
-
+    return tags_list[index] if confidence > 0.3 else "default"
 
 def get_response(user_input):
     intent = get_intent(user_input)
@@ -80,4 +77,3 @@ def get_response(user_input):
         if intent_data["tag"] == intent:
             return random.choice(intent_data["responses"])
     return "Sorry, I don't understand that."
-
